@@ -1,1 +1,202 @@
-Hello World
+<!DOCTYPE html>
+<!--
+    Name: Devin Hackman
+    Pawprint: DPH6PZ
+    Date: January 27 2021
+    Challenge : Portfolio S21
+-->
+
+<!-- 
+    References:
+        1) https://www.w3schools.com/howto/howto_css_image_center.asp
+        2) https://www.w3schools.com/css/css_navbar.asp
+        3) https://www.w3schools.com/tags/att_a_download.asp
+        4) https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+        5) https://github.com/Bardfighter
+        6) https://www.w3schools.com/css/css_align.asp
+        7) https://www.linkedin.com/in/devin-hackman-598462205/
+        8) https://www.w3schools.com/css/css_positioning.asp
+-->
+<html lang="en">
+    <head>
+        <title>Dph6pzPortfolioS21</title>
+        <meta charset="utf-8">
+        
+        <!-- code from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+        <!-- external style sheet for github/linkedin logos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- end of code from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+        
+        <style>
+            body{
+                background-color: aqua;
+            }
+            
+            #navbar {
+                padding: 0px;
+                margin: 0px;
+                display: block;
+                background-color: blue;
+                position: fixed;
+                
+                /* code from https://www.w3schools.com/css/css_positioning.asp */
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                /* end of code from https://www.w3schools.com/css/css_positioning.asp */
+            }
+            
+            .name {
+                color: white;
+                margin: 10px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+                font-size: 30px;
+                font-family: sans-serif;
+            }
+            
+            #profilePic {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                max-width: 90%;
+                
+                /* code taken from https://www.w3schools.com/howto/howto_css_image_center.asp */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                /* on centering an image */
+                /* end of code taken from https://www.w3schools.com/howto/howto_css_image_center.asp */
+                
+                border-style:inset;
+                border-color: blue;
+                border-width: 20px;
+            }
+            
+            .pictureHeader {
+                color: blue;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            
+            li{
+                float:left;
+            }
+            
+            li p {
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            li a {
+                color: white;
+                margin: 10px;
+                display: block;
+                text-align: left;
+                text-decoration: none;
+                font-size: 30px;
+                font-family: sans-serif;
+            }
+            
+            .center {
+                margin: 0;
+                position: absolute;
+                
+                /* code taken from https://www.w3schools.com/css/css_align.asp */
+                /* on how to vertically align an element */
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                /* end of code taken from https://www.w3schools.com/css/css_align.asp */
+                
+                width: 350px;
+            }
+            
+            
+            .links {
+                margin: 10px;
+                padding: 10px;
+                display:flex;
+                align-self: center;
+            }
+            
+            .buttons {
+                text-align: center;
+                width: 15%;
+                padding: 10px;
+                font-size: 15px;
+                text-decoration: none;
+                background-color: cornflowerblue;
+                color: white;
+                border-radius: 30%;
+            }
+            
+            /* code format from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+            .fa {
+                padding: 10px;
+                font-size: 20px;
+                width: 20px;
+                text-align: center;
+                text-decoration: none;
+                margin: auto;
+                background-color: cornflowerblue;
+                color: white;
+                border-radius: 30%;
+            }
+            
+            .fa:hover {
+                opacity: 0.7;
+            }
+            
+            .fa-github {
+
+            }
+            
+            .fa-linkedin {
+
+            }
+            /* end of code from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+
+            
+        </style>
+    </head>
+    <body>
+        
+        <!-- code from https://www.w3schools.com/css/css_navbar.asp -->
+        <ul id="navbar">
+            <li><a href="Dph6pzPortfolioS21.html">Devin Hackman</a></li>
+            <li><a href="Dph6pzColumnsS21.html">Skills</a></li>
+        </ul>
+        <!-- end of code from https://www.w3schools.com/css/css_navbar.asp -->
+        
+        <div class="center">
+            <img src="Dph6pzProfilepic.jpg" id="profilePic" alt="Devin Hackman">
+            <h2 class="pictureHeader">Devin Hackman</h2>
+            <p>Computer Science major seeking more experiences and connections</p>
+            <div class="links">
+                
+                <!-- link from https://github.com/Bardfighter -->
+                <a href="https://github.com/Bardfighter" target="_blank" class="fa fa-github"></a>
+                <!-- end of link from https://github.com/Bardfighter -->
+                
+                <!-- code from https://www.w3schools.com/tags/att_a_download.asp -->
+                <a href="Fall2020Resume.pdf" download="ResumeDevinHackman" class="buttons">Resume</a>
+                <!-- end of code from https://www.w3schools.com/tags/att_a_download.asp -->
+                
+                <!-- link from https://www.linkedin.com/in/devin-hackman-598462205/ -->
+                <a href="https://www.linkedin.com/in/devin-hackman-598462205/" target="_blank" class="fa fa-linkedin"></a>
+                <!-- link from https://www.linkedin.com/in/devin-hackman-598462205/ -->
+            </div>
+        </div>
+    </body>
+</html>
